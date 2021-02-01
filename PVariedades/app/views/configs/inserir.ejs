@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>PVariedades</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/coc1.png" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="bg-light">
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">PVariedades</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/painel">Painel </a>
+          </li>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Inserir</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Imagem do produto </span>
+        </h4>
+
+
+        <form class="card p-2">
+          <div class="input-group">
+            <span type="submit" class="btn btn-primary">Selecionar...</span>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Dados do produto</h4>
+
+        <form class="needs-validation" novalidate>
+
+
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+              <label for="firstName">Nome do produto</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">Tipo</label>
+              <select class="custom-select d-block w-100" id="state" required>
+                <option value="">Escolher...</option>
+                <option>Camisa</option>
+                <option>Tenis</option>
+                <option>Acessório</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor selecione seu estado.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 mb-3">
+              <label for="username">Descrição</label>
+              <div class="input-group">
+                <input type="text" maxlength="100" class="form-control" id="descricao" placeholder="" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Necessário descrição do produto
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <label for="email">Preço/Valor</label>
+              <input type="number" class="form-control" id="email" placeholder="R$" min="0.00" step="0.01"
+                value="20.00">
+              <div class="invalid-feedback">
+                Por favor insira um e-mail compátivel
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="zip">Quantidade</label>
+              <input type="number" class="form-control" id="zip" placeholder="0" required>
+              <div class="invalid-feedback">
+                Necessário valor.
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Receber notificação assim que o produto se esgotar.</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Inserir na lista de promoções.</label>
+        </div>
+
+          <hr class="mb-4">
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Inserir</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
